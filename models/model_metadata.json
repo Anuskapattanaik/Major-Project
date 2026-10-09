@@ -1,0 +1,52 @@
+{
+  "model_name": "DummyRegressor",
+  "target_column": "CO2 Emissions",
+  "feature_names": [
+    "Vehicle Type",
+    "Fuel Type",
+    "Engine Size",
+    "Age of Vehicle",
+    "Mileage",
+    "Speed",
+    "Acceleration",
+    "Road Type",
+    "Traffic Conditions",
+    "Temperature",
+    "Humidity",
+    "Wind Speed",
+    "Air Pressure"
+  ],
+  "numerical_features": [
+    "Engine Size",
+    "Age of Vehicle",
+    "Mileage",
+    "Speed",
+    "Acceleration",
+    "Temperature",
+    "Humidity",
+    "Wind Speed",
+    "Air Pressure"
+  ],
+  "categorical_features": [
+    "Vehicle Type",
+    "Fuel Type",
+    "Road Type",
+    "Traffic Conditions"
+  ],
+  "train_config": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "cv_folds": 5,
+    "selection_metric": "RMSE"
+  },
+  "test_metrics": {
+    "MAE": 112.584128942593,
+    "RMSE": 129.79763429847432,
+    "R2": -0.00015656024833488047,
+    "MAPE": 68.4629698657206
+  },
+  "n_features_in": 13,
+  "n_numerical": 9,
+  "n_categorical": 4,
+  "saved_at": "2026-10-09T14:48:51.684918"
+}
